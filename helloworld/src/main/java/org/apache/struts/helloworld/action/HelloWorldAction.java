@@ -29,6 +29,12 @@ public class HelloWorldAction extends ActionSupport {
      * (non-Javadoc)
      * @see com.opensymphony.xwork2.ActionSupport#execute()
      */
+    
+    /*Este método, si vamos a la ayuda de la clase que podemos encontrar en Internet, es
+        el método que debe sobreescribirse para implementar lo que la página llama “lógica de
+        negocio”, es decir, es el método que debemos sobreescribir para implementar la acción
+        asociada con la acción del usuario*/
+    @Override
     public String execute() {
         messageStore = new MessageStore() ;
         
