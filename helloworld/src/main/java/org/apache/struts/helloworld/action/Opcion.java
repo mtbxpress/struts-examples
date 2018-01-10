@@ -14,8 +14,8 @@ public class Opcion {
     
     public Opcion(){}
     
-    public String execute() /*throws Exception*/{
-     //   return "success";
+    public String execute() throws Exception{//cuidado al comprar numero como si fuesen cadenas salta exception
+      //  return "success";
         return SUCCESS;
     }
     

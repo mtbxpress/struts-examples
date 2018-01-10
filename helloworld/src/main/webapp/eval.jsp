@@ -18,8 +18,15 @@
         <s:elseif test="opcion=='Citroen'">
             Has seleccionado Citroen.
         </s:elseif>
+        <s:elseif test="opcion%2==0">
+            Número par.
+        </s:elseif>
+        <s:elseif test="opcion%2==1">
+            Número impar.
+        </s:elseif>            
         <s:else>
             Te gustan los coches caros, ¿eh?.
         </s:else>
+
     </body>
 </html>

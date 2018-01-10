@@ -24,7 +24,11 @@
                 
 		<action name="opcion" class="org.apache.struts.helloworld.action.Opcion" method="execute">
 			<result name="success">/eval.jsp</result>
-		</action>                
-	</package>
+		</action>  
+                
+		<action name="iterador" class="org.apache.struts.helloworld.action.Semana">
+			<result name="success">semana.jsp</result>
+		</action>                                              
+	</package>    
 
 </struts>
