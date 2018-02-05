@@ -28,7 +28,11 @@
                 
 		<action name="iterador" class="org.apache.struts.helloworld.action.Semana">
 			<result name="success">semana.jsp</result>
-		</action>                                              
+		</action>     
+                
+		<action name="listadoPersonas" class="org.apache.struts.helloworld.action.Listado">
+			<result name="success">/listadoPersonas.jsp</result>
+		</action>                                                                                                    
 	</package>    
 
 </struts>

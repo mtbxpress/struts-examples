@@ -25,8 +25,8 @@
         <table border="1" style="width:50%">
             <s:iterator value="dias" status="diasStatus">
                 <tr>
-                    <s:if test="diasStatus.even == true"> <!-- even en iterator indica si es impar o par -->
-                        <td style="background: #FFFFFF"><s:property /></td>    
+                    <s:if test="#diasStatus.even == true"> <!-- even en iterator indica si es impar o par (booleano)-->
+                        <td style="background: #FF0000"><s:property /></td>    
                     </s:if>
                     <s:else>
                         <td><s:property /></td>
@@ -34,7 +34,12 @@
                     
                 </tr>
             </s:iterator>
-                
+<!-- 
+La etiqueta “property” tal y como se utiliza en los ejemplos anteriores sólo es válida
+si la lista contiene elementos simples. Si deseamos hacer una tabla con valores encapsu-
+lados en una clase (por ejemplo), debemos incluir el atributo value de la etiqueta property
+con el valor del nombre del atributo de la clase que se desee mostrar.
+-->                
                
         </table>        
         <hr> <strong>Iterador de otra forma</strong> <br>
